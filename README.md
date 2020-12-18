@@ -1,4 +1,4 @@
-Developed with the following technologies:
+Developed with the following technologies by [@tarikguney](https://github.com/tarikguney)
 
 ![](./assets/logo/azure-functions.png) ![](./assets/logo/dotnet-core-logo.png)
 
