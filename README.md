@@ -17,7 +17,7 @@ The solution is intentionally kept visible and straightforward. It communicates 
 There are some screenshots of the messages below for you to see what's being communicated. Note that the source code will be the best place to check for the full list of messages and communication for now.
 
 ### In-Sprint action reminders
-Manager Automation service sends daily reminders like the following and reminder series of actions to the team members by mentioning their name to get notifications through the Google Chat. The following images demonstrate various types of messages sent for further action to Google Chat.
+Manager Automation service sends daily reminders as demonstrated in the screenshots below. These series of reminders ensure the necessary actions being taken by the team members. The reminders use Google Chat's name mentioning feature to help the targeted team members to get on-time and relevant notifications through the Google Chat.
 
 ![](./assets/screenshots/in-sprint-alt3.png)
 
