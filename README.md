@@ -70,5 +70,72 @@ In the first day of the sprint, this automation checks if there is any remaining
 - Due date reminders. 
 
 ## Setup and Configuration
+### Dependencies
+This project is developed for **[Azure Functions](https://azure.microsoft.com/en-us/services/functions)** with **.[NET 5, (originally .NET Core 3.x)](https://dotnet.microsoft.com/)**. Hence, some basic knowledge in this technology stack is helpful. Also, this service assumes that you are using **[Azure DevOps](https://dev.azure.com)** as the project planning/tracking environment and **[Google Chat](https://chat.google.com)** as the communication medium among your team members.
+### Publishing to Azure Functions
+Deploying this source code to the Azure Function is easy. This project uses Library version of Azure Functions. Check out these steps to learn how to publish Azure Functions: [Publish to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs#publish-to-azure).
 
-TBD
+Once you deploy this function app to Azure Functions, these are the functions that will appear on the Azure Portal:
+
+![](./assets/screenshots/functions.png)
+
+### App Settings
+
+To complete app settings, you need various pieces of information from Azure DevOps and Google Chat.
+
+In addition to the default app settings that come with the Azure Function creation, there are some custom settings that the source code depends on as follows. All of them are required!
+
+```json
+[
+  {
+    "name": "AzureDevOps__ApiKey",
+    "value": "PERSONAL-ACCESS-TOKEN-FROM-AZURE-DEVOPS",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureDevOps__Organization",
+    "value": "ORGANIZATION-NAME-OF-AZURE-DEVOPS",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureDevOps__Project",
+    "value": "PROJECT-NAME-FROM-AZURE-DEVOPS",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureDevOps__Team",
+    "value": "TEAM-NAME-FROM-AZURE-DEVOPS",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureDevOpsUsersMapToGoogleChat",
+    "value": "AZURE-DEVOPS-USER1-EMAIL:GOOGLE-CHAT-ID-1;AZURE-DEVOPS-USER2-EMAIL:GOOGLE-CHAT-ID-2",
+    "slotSetting": false
+  },
+  {
+    "name": "EngineeringManagerInfo__AzureDevOpsEmail",
+    "value": "ENGINEERING-MANAGER-EMAIL-FROM-AZURE-DEVOPS",
+    "slotSetting": false
+  },
+  {
+    "name": "EngineeringManagerInfo__GoogleChatUserId",
+    "value": "ENGINEERING-MANAGER-GOOGLE-CHAT-ID",
+    "slotSetting": false
+  },
+  {
+    "name": "EngineeringManagerInfo__ManagerRemindersGoogleWebhookUrl",
+    "value": "MANAGERS-ONLY-REMINDERS-ROOM-WEBHOOK-URL",
+    "slotSetting": false
+  },
+  {
+    "name": "GoogleChat__WebhookUrl",
+    "value": "GOOGLE-CHAT-ROOM-WEBHOOK-URL",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_TIME_ZONE",
+    "value": "Mountain Standard Time",
+    "slotSetting": false
+  }
+]
+```
