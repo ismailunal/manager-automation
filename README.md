@@ -4,7 +4,7 @@ Developed with the following technologies by [@tarikguney](https://github.com/ta
 
 ![](./assets/banner/manager-automation-hq-banner.png)
 
-# Management Automation
+# Manager Automation
 
 ## What is it?
 **As an engineering manager, you realize that a lot of your time goes to repetitive tasks that include reminding your team of the importance of keeping the sprint board up-to-date for more accurate work tracking.** There could be many reasons why you find yourself in this situation, but regardless of the reason, Manager Automation will take some of that burden off your shoulders. It will continuously analyze the current Sprint's board. It will remind the team of the missing information in the form of actionable reminders that are important for the smooth execution of every Sprint. **Note that these reminders play an essential role in guiding the team and new hires towards the expectations of the team and company culture.**
