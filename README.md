@@ -26,7 +26,7 @@ Manager Automation service sends daily reminders like the following and reminder
 ![](./assets/screenshots/in-sprint-alt1.png)
 
 ### End-of-sprint action reminders
-Manager Automation service embeds specific situational facts in the reminder text. For example, it changes its greeting when it is the last day of the Sprint to draw people's attention because the Sprint is about to end, and there might be some missing information in the Sprint. It also guides the team members on how the incomplete work must be handled based on the time available and committed time for the work item.
+Manager Automation service embeds specific situational facts in the reminder text. For example, it changes its greeting when it is the last day of the Sprint to draw people's attention to the fact that the Sprint is about to end, and there might be some missing work in the Sprint. It also guides the team members on how the incomplete work must be handled based on the time available and committed time for the work item estimated by the engineer.
 
 ![](./assets/screenshots/last-day-sprint-reminders.png)
 
