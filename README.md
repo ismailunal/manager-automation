@@ -1,3 +1,7 @@
+Developed with the following technologies:
+
+![](./assets/logo/azure-functions.png) ![](./assets/logo/dotnet-core-logo.png)
+
 # Management Automation
 
 ## What is it?
